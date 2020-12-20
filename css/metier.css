@@ -2,7 +2,6 @@
 /*
  SPECIFIC CSS
 */
-
 nav .start-1,
 a:nth-child(1):hover~.animation {
     width: 150px;
@@ -30,13 +29,8 @@ a:nth-child(4):hover~.animation {
     left: 500px;
     background-color: green;
 }
-#pageTitle{
-    color:black;
-    margin:auto;
-    padding: 40px;
-    font-weight: bold;
-    font-size: 44px;
-}
+
+
 .metier{
     margin-top: 20px;
     display: block;
@@ -102,17 +96,7 @@ button:hover {
     height: 1000%;
     z-index: 20;
 }
-header {
-    background-color: #97a9b9;
-    height: 15%;
-    padding-top : 20px;
-}
-#logoIUT {
-    width: 6%;
-    float: left;
-    margin-left: 10%;
-    padding-top: 10px;
-}
+
 
 #TechSupp {
     width: 35%;
