@@ -46,7 +46,7 @@ a:nth-child(4):hover~.animation {
     display: none;
 }
 #pageTitle{
-    color:black;
+    color:white;
     margin:auto;
     padding: 40px;
     font-weight: bold;
@@ -55,7 +55,7 @@ a:nth-child(4):hover~.animation {
 .metier{
     margin-top: 20px;
     display: block;
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
     font-size: 18px;
     margin-left: 15%;
@@ -65,7 +65,7 @@ a:nth-child(4):hover~.animation {
     width: 7%;
 }
 .metier a{
-    color:black;
+    color:white;
     text-shadow: none;
 }
 .exitbtn{
@@ -87,24 +87,30 @@ button:hover {
 .MAbout {
     text-align: left;
     display: none;
-    width: 40%;
-    background-color: white;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: -220px;
-    margin-bottom: 15%;
+    width: 80%;
+    background: rgb(13,13,88);
+    background: -moz-radial-gradient(circle, rgba(13,13,88,1) 3%, rgba(3,8,42,1) 47%, rgba(1,0,0,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(13,13,88,1) 3%, rgba(3,8,42,1) 47%, rgba(1,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(13,13,88,1) 3%, rgba(3,8,42,1) 47%, rgba(1,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d0d58",endColorstr="#010000",GradientType=1);
+    background-attachment: local;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30%;
     z-index: 21;
 }
 .MAbout p {
+    color:white;
     margin: 20px;
     text-align: left;
     }
 .MAbout .txtp>a {
-    color: darkgreen;
+    color: rgb(0, 175, 0);
     font-weight: bold;
     text-shadow: none;
 }
 .MAbout h2 {
+    color:white;
     margin-top: -20px;
     text-align: center;
     font-weight: bold;
@@ -117,22 +123,13 @@ button:hover {
     height: 1000%;
     z-index: 20;
 }
-header {
-    background-color: #97a9b9;
-    height: 15%;
-    padding-top : 20px;
-}
-#logoIUT {
-    width: 6%;
-    float: left;
-    margin-left: 10%;
-    padding-top: 10px;
-}
 
 #TechSupp {
-    width: 35%;
+    display: inline-block;
+    margin:auto;
+    width: 80%;
     padding: 10px;
-    border-color: black;
+    border-color: white;
     border-style: solid;
     border-width: 2px;
     border-radius: 15%;
@@ -141,9 +138,11 @@ header {
     border-color: darkgreen;
 }
 #Pent {
-    width: 35%;
+    display: inline-block;
+    margin:auto;
+    width: 80%;
     padding: 10px;
-    border-color: black;
+    border-color: white;
     border-style: solid;
     border-width: 2px;
     border-radius: 15%;
@@ -152,10 +151,11 @@ header {
     border-color: darkgreen;
 }
 #Anal {
-    width: 35%;
-    margin-left: 10%;
+    display: inline-block;
+    margin:auto;
+    width: 80%;
     padding: 10px;
-    border-color: black;
+    border-color: white;
     border-style: solid;
     border-width: 2px;
     border-radius: 15%;
@@ -164,9 +164,11 @@ header {
     border-color: darkgreen;
 }
 #Inte {
-    width: 35%;
+    display: inline-block;
+    margin:auto;
+    width: 80%;
     padding: 10px;
-    border-color: black;
+    border-color: white;
     border-style: solid;
     border-width: 2px;
     border-radius: 15%;
@@ -175,11 +177,12 @@ header {
     border-color: darkgreen;
 }
 #Dev {
-    width: 35%;
-    margin-left: 25%;
+    display: inline-block;
+    margin:auto;
+    width: 80%;
     margin-bottom: 100px;
     padding: 10px;
-    border-color: black;
+    border-color: white;
     border-style: solid;
     border-width: 2px;
     border-radius: 15%;
@@ -189,23 +192,11 @@ header {
 }
 
 .inline {
-    display: block;
-    text-align: left;
+    text-align: center;
+    margin: 30px;
 }
 .inline div{
     display: inline-block;
-}
-#ILPent {
-    margin-left: 20%;
-}
-#ILPent #Pent {
-    width: 45%;
-}
-#ILInte {
-    margin-left: 30%;
-}
-#ILInte #Inte {
-    width: 45%;
 }
 .link {
     font-size: 13px;
