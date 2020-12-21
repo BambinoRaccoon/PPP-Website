@@ -8,7 +8,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
         <!-- Header -->
-        <title>CyberSecurité - Les Metiers</title>
+        <title>CyberSecurité - Les Métiers</title>
         <link rel="icon" href="img/favicon.ico" />
 
         <!-- Bootstrap -->
@@ -21,36 +21,86 @@
         <!-- CSS -->
         <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/style.css">
         <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/RWD/style.css">
-        
+
         <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/metier.css">
         <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/RWD/metiers.css">
 
     </head>
 
     <!-- CREDITS -->
-    <!-- Page développée par KHADDAN Mohammad et PELTIER Léonard-->
+    <!-- Page développée par KHADDAN Mohammad & PELTIER Léonard-->
     <!-- Groupe 2 INFS1_5B -->
     <!-- CREDITS -->
     
     <body>
         <header>
+            <!-- Barre de navigation par KHADDAN Mohammad & ROUBAHIE-FISSA Gael -->
             <div id="top">
                 <a href="https://www.iut-rcc.fr/" target="_blank" rel="noopener"><img src="img/logoiut.png" id="logoIUT"></a>
             </div>            
                 
-            <nav class="col-xl-6">
-                <a href="index.html">Accueil</a>
-                <a href="Metiers.html">Les Metiers</a>
-                <a href="Pentester.html">PENTESTER</a>
-                <a href="aPropos.html">A Propos</a>
-                <div class="animation start"></div>
-            </nav>
+            <div id="mySidenav" class="sidenav">
+                <nav class="nav-sub">
+                    <a id="closebtn">&times;</a>
+                    <a href="index.html">Accueil</a>
+                    <a href="Metiers.html">Les Métiers</a>
+                    <a href="Pentester.html">PENTESTER</a>
+                    <a href="aPropos.html">A Propos</a>
+                    <div class="animation start"></div>
+                </nav>
+            </div>
+
+            <div id="wooper" class="sticky-top">
+                <a id="burger">&#9776;</a>
+                <div id="seperate">
+                </div>
+            </div>
+            <script>
+                let burger = document.getElementById("burger");
+                let closebtn = document.getElementById("closebtn");
+                
+                var fullWidth = window.innerWidth;
+                var fullH = window.innerHeight;
+
+                function openNav() {
+                    if (fullWidth >= 330) {
+                        document.getElementById("mySidenav").style.display = "block";
+                    }
+                    document.getElementById("mySidenav").style.width = "100%";
+                    document.getElementById("mySidenav").style.height = "100%";
+                }
+
+                function closeNav() {
+                    if (fullWidth >= 330) {
+                        document.getElementById("mySidenav").style.display = "none";
+                    }
+                    document.getElementById("mySidenav").style.width = "0%";
+                    document.getElementById("mySidenav").style.height = "0%";
+                }
+
+                burger.addEventListener("click", () => {
+                    openNav()
+                })
+                closebtn.addEventListener("click", () => {
+                    closeNav()
+                })
+            </script>
+            <div id="wrapper-nav">
+                <nav class="nav-main">
+                    <a href="index.html">Accueil</a>
+                    <a href="Metiers.html">Les Métiers</a>
+                    <a href="Pentester.html">PENTESTER</a>
+                    <a href="aPropos.html">A Propos</a>
+                    <div class="animation start"></div>
+                </nav>
+            </div>
         </header>
 
         <div>
+            <!-- Par KHADDAN Mohammad -->
             <!-- CODE -->
 
-            <h1  id="pageTitle" class="col-xl-6">Les Metiers de la CyberSecurité</h1>
+            <h1  id="pageTitle" class="col-xl-6">Les Métiers de la CyberSecurité</h1>
 
             <!-- DIV BACKGROUND -->
             <img id="MABckgnd" src="img/MABckgnd.png">

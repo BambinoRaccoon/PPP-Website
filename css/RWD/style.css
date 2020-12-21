@@ -1,5 +1,12 @@
+#pageTitle {
+    color: white;
+    margin: auto;
+    padding: 40px;
+    font-weight: bold;
+    font-size: 44px;
+}
 
-.custom-container {
+.container {
     max-width: 1200px;
     margin: auto;
 }
@@ -10,9 +17,9 @@
 }
 
 body {
+    color: white;
     /* Fade-in effct on load*/
     font-family: 'Lato', sans-serif;
-    margin-top: 25px;
     font-size: 21px;
     text-align: center;
     animation: fadein 4s;
@@ -22,27 +29,21 @@ body {
     /* Safari and Chrome */
     -o-animation: fadein 4s;
     /* Opera */
-    background: rgb(13,13,88);
-    background: -moz-radial-gradient(circle, rgba(13,13,88,1) 3%, rgba(3,8,42,1) 47%, rgba(1,0,0,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(13,13,88,1) 3%, rgba(3,8,42,1) 47%, rgba(1,0,0,1) 100%);
-    background: radial-gradient(circle, rgba(13,13,88,1) 3%, rgba(3,8,42,1) 47%, rgba(1,0,0,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d0d58",endColorstr="#010000",GradientType=1);
+    background: rgb(13, 13, 88);
+    background: -moz-radial-gradient(circle, rgba(13, 13, 88, 1) 3%, rgba(3, 8, 42, 1) 47%, rgba(1, 0, 0, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(13, 13, 88, 1) 3%, rgba(3, 8, 42, 1) 47%, rgba(1, 0, 0, 1) 100%);
+    background: radial-gradient(circle, rgba(13, 13, 88, 1) 3%, rgba(3, 8, 42, 1) 47%, rgba(1, 0, 0, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0d0d58", endColorstr="#010000", GradientType=1);
     background-attachment: local;
-}
-
-
-header {
-    height: 15%;
-    padding-top : 20px;
+    height: 100%;
+    margin: 0px;
+    margin-top: 0px;
+    scroll-behavior: smooth;
 }
 
 #logoIUT {
-    width: 6%;
-    float: left;
-    margin-left: 10%;
-    padding-top: 10px;
+    display: none;
 }
-
 
 @keyframes fadein {
     from {
@@ -84,10 +85,6 @@ header {
 }
 
 nav {
-    margin: 27px auto 0;
-    position: relative;
-    width: 670px;
-    height: 50px;
     background-color: #34495e;
     border-radius: 80px;
     font-size: 0;
@@ -107,12 +104,7 @@ nav a {
 }
 
 nav .animation {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    transition: all .5s ease 0s;
-    border-radius: 80px;
+    display: none;
 }
 
 a:nth-child(1) {
@@ -139,14 +131,6 @@ a:hover,
 a:active {
     color: white;
     text-decoration: none;
-}
-
-body {
-    height: 100%;
-    margin: 0px;
-    margin-top: 0px;
-    background-color: rgb(243, 243, 243);
-    scroll-behavior: smooth;
 }
 
 #footer {
@@ -176,3 +160,65 @@ p>button {
     float: left;
 }
 
+#burger {
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+
+.sidenav {
+    height: 0;
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #34495e;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: left;
+}
+
+.sidenav a {
+    margin-left: 5%;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav #closebtn {
+    float: right;
+    font-size: 50px;
+}
+
+#mySidenav {
+    display: none;
+}
+
+#wrapper-nav {
+    display: none;
+}
+
+#wooper {
+    color: white;
+    display: inline-block;
+    background: #34495e;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    margin-right: 20%;
+    margin-left: 3%;
+    margin: auto;
+    width: 60%;
+}
+
+.sidenav {
+    display: block;
+    padding-top: 15px;
+}
+
+.sidenav a {
+    font-size: 18px;
+}
